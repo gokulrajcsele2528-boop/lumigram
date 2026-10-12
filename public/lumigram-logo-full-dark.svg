@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 90" fill="none">
+  <defs>
+    <linearGradient id="lumiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="50%" stop-color="#f43f5e" />
+      <stop offset="100%" stop-color="#fbbf24" />
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="85%" stop-color="#e2e8f0" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Camera Emblem with glowing rounded box -->
+  <g transform="translate(10, 10)">
+    <!-- Outer Glow -->
+    <rect x="2" y="2" width="66" height="66" rx="20" stroke="url(#lumiGrad)" stroke-width="2.5" fill="none" opacity="0.4" filter="url(#glow)"/>
+    <!-- Main Outer Frame -->
+    <rect x="2" y="2" width="66" height="66" rx="20" stroke="url(#lumiGrad)" stroke-width="4.5" fill="#080c14"/>
+    
+    <!-- Inner Lens Ring -->
+    <circle cx="35" cy="35" r="16" stroke="url(#lumiGrad)" stroke-width="4" fill="none"/>
+    
+    <!-- Prism Center Dot / Flash -->
+    <circle cx="35" cy="35" r="6" fill="url(#lumiGrad)"/>
+    <!-- Top Right Flash Point -->
+    <circle cx="51" cy="19" r="3.5" fill="#fbbf24"/>
+    
+    <!-- Subtle Light Beam Accents -->
+    <path d="M12 20 L20 12" stroke="#00f2fe" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  </g>
+
+  <!-- Lumigram Brand Typography -->
+  <text x="96" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="44" letter-spacing="-1.2" fill="url(#textGrad)">
+    Lumigram
+  </text>
+  
+  <!-- Tiny sparkling light star above letter 'i' -->
+  <path d="M251 22 L253 27 L258 29 L253 31 L251 36 L249 31 L244 29 L249 27 Z" fill="#fbbf24" opacity="0.95"/>
+</svg>
